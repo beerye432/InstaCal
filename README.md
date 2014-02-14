@@ -1,4 +1,5 @@
-Lab 2
-====
+Calendar APP:
 
-Lab 2 introduces you to static HTML, CSS, and Bootstrap.
+Work in progress 
+
+Social Calendar app for mobile devices
