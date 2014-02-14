@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Feb 14 2014 07:15:56 GMT+0000 (UTC) -->
+<html data-wf-site="52f1ae1fe46dc3cb1b000090">
+<head>
+  <meta charset="utf-8">
+  <title>Calender App - Sign up page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/calendar-app.webflow.css">
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+  <div class="w-container login-container">
+    <div class="w-form form-wrap">
+      <form class="form-wrap" name="email-form" data-name="Email Form" data-redirect="http://calendar-app.webflow.com/my-calendars">
+        <label class="name-text" for="name">Name:</label>
+        <input class="w-input name" type="text" placeholder="Enter your name" name="name" data-name="Name"></input>
+        <label class="email-text" for="email">Email Address:</label>
+        <input class="w-input email-input" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required"></input>
+        <label class="confirm-email-text">Confirm Email:</label>
+        <input class="w-input confirm-email-input" type="email" placeholder="Enter your email address again" name="field" required="required"></input>
+        <label class="username-text">Desired Username:</label>
+        <input class="w-input sign-up-username" type="text" placeholder="Enter desired username" name="enter-desired-username" required="required" data-name="Enter desired username"></input>
+        <label class="password-text">Password:</label>
+        <input class="w-input sign-up-password" type="password" placeholder="Enter desired password" name="password" required="required" input-type="hidden" data-name="Password"></input>
+        <label class="confirm-password-text">Confirm Password:</label>
+        <input class="w-input confirm-password" type="password" placeholder="Enter desired password again" name="confirm-password" required="required" data-name="Confirm password"></input>
+        <input class="w-input date" type="text" placeholder="Date" name="date" required="required" data-name="Date"></input>
+        <label class="gender-label">Gender:</label>
+        <a class="w-inline-block cancel-button" href="http://calender-app.webflow.com/">
+          <div class="cancel">Cancel</div>
+        </a>
+        <input class="w-button confirm-button" type="submit" value="Confirm" data-wait="Please wait..."></input>
+        <label class="date-of-birth">Date of Birth:</label>
+        <input class="w-input year-input-box" type="text" placeholder="Year" name="year-input" required="required" data-name="Year input"></input>
+        <select class="w-select gender" name="dropdown">
+          <option value="">Select one...</option>
+          <option value="F">Female</option>
+          <option value="M">Male</option>
+          <option value="N">Care not to specify</option>
+        </select>
+        <select class="w-select month" name="dropdown" required="required">
+          <option value="">Month</option>
+          <option value="Jan">January</option>
+          <option value="Feb">February</option>
+          <option value="Third">Third Choice</option>
+        </select>
+      </form>
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been received!</p>
+      </div>
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the form :(</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+</body>
+</html>
